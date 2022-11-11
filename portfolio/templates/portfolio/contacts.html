@@ -1,0 +1,45 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block home_icon %}href="{% url 'home' %}"{% endblock %}
+
+{% block home_text %}href="{% url 'home' %}"{% endblock %}
+
+{% block project %}href="{% url 'home' %}"{% endblock %}
+
+{% block content %}
+
+<h1 id="contact_title">Способы связи со мной</h1>
+
+<div class="middle">
+    <a class="btncontacts" href="https://vk.com/blyablyaablya" target="_blank">
+        <div class="w">
+            <i class="fa-brands fa-vk"></i>
+        </div>
+    </a>
+    <a class="btncontacts" href="https://t.me/Niketttos" target="_blank">
+        <div class="w">
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+    </a>
+    <a class="btncontacts" href="https://e.mail.ru/compose/?to=nik.solodovnik95@inbox.ru" target="_blank">
+        <div class="w">
+            <i class="fa-solid fa-at"></i>
+        </div>
+    </a>
+    <a class="btncontacts" href="https://discordapp.com/users/594644342723969024/" target="_blank">
+        <div class="w">
+            <i class="fa-brands fa-discord"></i>
+        </div>
+    </a>
+    <a class="btncontacts" href="https://github.com/Nikyots" target="_blank">
+        <div class="w">
+            <i class="fa-brands fa-github"></i>
+        </div>
+    </a>
+</div>
+
+<h1 id="contact_description">Надеюсь ты зашёл на эту вкладку не просто так!</h1>
+
+{% endblock %}
